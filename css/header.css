@@ -1,28 +1,39 @@
 body {
     margin: 1px;
     background-color:  rgb(241, 246, 241);
-    min-width: 500px;;
+    min-width: 530px;
 }
 
 .container {
     max-width: 800px;
+    
     margin: auto;
     font-family: 'Roboto', sans-serif;
-    border: 1px solid green;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+    border-bottom: 1px solid green;
     border-radius: 5px;
     min-height: 800px;
+    padding:0;
+}
+
+.FixBox {position: fixed;
+    width:100%;
+    z-index: 10;
 }
 
 .header {
     position: relative;
     background-color: rgb(225, 238, 225);
-    margin: 10px 0;
+    border: 1px solid green;
     border-radius: 5px;
+    max-width: 800px;
+    margin-left: -1px;
+    margin-top: -1px;
+    min-width: 490px;
 }
 
-#cegnev { 
-    display: flex;
-}
+#cegnev {display: flex;}
 
 .header img{
     max-width: 150px;
@@ -34,7 +45,7 @@ body {
     font-size: 22px;
     font-weight: bolder;
     color: rgb(37, 109, 37);
-    margin: 10px;
+    margin: 15px 10px;
 }
 
 #disab {
@@ -51,6 +62,50 @@ body {
     border: 3px solid green;
 }
 
+/* Menü elemeinek beállítása */
+
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {font-weight: bold;}
+
+.navbar-light .navbar-nav .nav-link {color: rgb(37, 109, 37);}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(2, 68, 2);
+    text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgb(19, 54, 19);
+    border-bottom: 3px solid limegreen;
+    padding-bottom: 0;
+    pointer-events: none;
+}
+
+ul.dropdown-menu.show {
+    background-color: #E1EEE1;
+    border: 1px solid green;
+    padding: 5px;
+}
+
+a#navbarDropdown.nav-link.dropdown-toggle {color: rgb(37, 109, 37);}
+
+a#navbarDropdown.nav-link.dropdown-toggle.show {
+    color: rgb(2, 68, 2);
+    text-decoration: underline;
+}
+
+a.dropdown-item {
+    color:rgb(37, 109, 37);
+    font-weight: bold;
+}
+
+a.dropdown-item:hover {
+    background-color: rgb(168, 236, 168);
+    color: rgb(2, 68, 2);
+    border-radius: 5px;
+}
+
+/* Kinézet mobil eszközökön */
+
 .NavBar {
     position: absolute;
     top: 42px;
@@ -60,8 +115,18 @@ body {
 @media only screen and (max-width: 991px) {
     .header img#logo {display: none;}
     .NavBar {left: 0px; top:45px;}
+    ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+        background-color: #E1EEE1;
+        border: 1px solid green;
+        border-radius: 5px;
+        padding: 0 10px 10px 10px;
+    }
+    button.navbar-toggler {
+        margin-bottom: 10px;
+        background: rgb(225, 238, 225);        
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     .header h1 {font-size: 18px;}
 }
