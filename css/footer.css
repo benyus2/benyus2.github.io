@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(5, 44, 5);
+    color: white;
+    border-radius: 3px;
+    PADDING: 10px;
+}
+.footer img {
+    max-width: 200px;
+    border-radius: 3px;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact h3 {
+    font-size: 16px;
+    font-weight: bolder;
+    border-bottom: 2px solid white;
+}
+
+#contact h4 {
+    font-size: 12px;
+    color: ilghtgray;
+}
