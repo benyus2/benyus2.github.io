@@ -35,7 +35,7 @@ body {
 
 #cegnev {display: flex;}
 
-.header img{
+img#logo{
     max-width: 150px;
     margin: 10px;
     border-radius: 3px;

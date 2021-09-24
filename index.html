@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="lib/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/a11y-toolbar.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/header.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css" rel="stylesheet">
@@ -19,7 +20,6 @@
 
                 <div id="cegnev"><a href="index.html"> <img src="img/rendelo.jpg" alt="" id="logo"></a>
                     <h1>Mezőkövesd Városi Önkormányzat Rendelőintézete</h1>
-                    <img src="./img/disab.png" id="disab" alt="Akadálymentes verzió">
                 </div>
                 <div class="NavBar">
                     <nav class="navbar navbar-expand-lg navbar-light" ;>
@@ -27,7 +27,13 @@
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation" style="border-color: green;">
-                                <span class="navbar-toggler-icon"></span>
+                                <!--span class="navbar-toggler-icon"></span-->
+
+
+
+                                <img src="img/hamburger_icon.png" id="hamburger">
+
+
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -98,8 +104,6 @@
                         </div>
                     </div>
 
-
-
                     <div class="card" style="width: 18rem;">
                         <img src="actualities/pics/maszkviseles.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -110,7 +114,6 @@
                             2021. július 19.
                         </div>
                     </div>
-
 
                     <div class="card" style="width: 18rem;">
                         <img src="actualities/pics/oltas.jpg" class="card-img-top" alt="...">
@@ -145,6 +148,8 @@
     </div>
 
     <script src="lib/bootstrap-5.1.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/a11y-toolbar.js"></script>
 </body>
 
 </html>
