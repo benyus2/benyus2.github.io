@@ -26,4 +26,43 @@ span {
 
 .accordion {
     margin-top: 20px;
+    
+}
+
+.accordion-item {
+     border-color: green;
+     background-color:  rgb(243, 250, 243);
+     color: rgb(37, 109, 37);
+}
+
+.accordion-button {
+    border-color: green;
+    color: rgb(37, 109, 37);
+    background-color:  rgb(239, 248, 239);
+    font-weight: bolder;
+}
+
+
+.accordion-button:hover {
+    background-color: rgb(225, 238, 225);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: green;
+    color: white;
+    box-shadow: none;
+}
+
+
+
+.accordion-button.collapsed {
+    box-shadow: none;
+}
+
+div.alert.alert-danger {
+    padding: 2px;
+}
+
+table.what-need {
+    text-align: center;
 }
