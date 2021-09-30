@@ -26,13 +26,17 @@ span {
 
 .accordion {
     margin-top: 20px;
-    
+}
+
+.accordion-body {
+    background-color: white;
+    padding-top: 0px;
 }
 
 .accordion-item {
-     border-color: green;
-     background-color:  rgb(243, 250, 243);
-     color: rgb(37, 109, 37);
+    border-color: green;
+    background-color:  rgb(243, 250, 243);
+    color: rgb(37, 109, 37);
 }
 
 .accordion-button {
@@ -53,16 +57,53 @@ span {
     box-shadow: none;
 }
 
-
-
 .accordion-button.collapsed {
     box-shadow: none;
 }
 
+h4,h5,h6, .time-table td {font-weight: bolder;}
+
+h5 {
+    font-size: 1em;
+}
+
+.accordion-body h4 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+    margin-top: 30px;
+    color:rgb(29, 85, 29)
+}
+
+
 div.alert.alert-danger {
     padding: 2px;
+    margin-top: 20px;
 }
 
 table.what-need {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+table.time-table {
+    text-align: center;
+    border: 1px solid green;
+}
+
+.time-table td {
+    width: 20%;
+}
+
+.time-table thead {
+    background-color: #ABDB77;
+}
+
+div.alert.alert-primary {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+div.alert.alert-primary div {
+    line-height: 1em;
+    text-align: justify;
 }
