@@ -19,15 +19,12 @@ p {
     margin-bottom: 5px;
 }
 
-
-
 .gdpr-group {
     color:rgb(37, 109, 37);
 }
 
 .gdpr-group ul {
     padding: 20px;
-
 }
 
 .gdpr-group a {
@@ -38,6 +35,7 @@ p {
     color:rgb(26, 78, 26);
     font-weight: bold;
 }
+
 .gdpr-group h2 {
     font-size: 18px;
     font-weight: bold;
@@ -48,9 +46,10 @@ p {
 
 .gdpr-head {display: flex;}
 
-.gdpr img {
+.gdpr img, .video img, .web img {
     max-width: 200px;
     margin: 10px 10px 10px 0;
+    border-radius: 3px;
 }
 .gdpr-head h3 {
     color:green;
@@ -72,4 +71,18 @@ font-weight: bold;
 .pdf img {
     max-width: 30px;
     margin: 2px;
+}
+
+.video h3, h4 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.video ul {
+    margin-bottom: 0px;
+}
+
+.web h3, h4 {
+    font-size: 1.2em;
+    text-align: center;
 }
